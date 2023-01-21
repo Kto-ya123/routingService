@@ -17,7 +17,6 @@ public class BFSAlgorithm implements SearchAlgorithm {
 
     @Nullable
     public LinkedList<String> getRoute(String originNode, String destinationNode){
-        Integer iterations = 0;
         if(Objects.equals(originNode, destinationNode)
                 || !graph.containsKey(originNode)
                 || !graph.containsKey(destinationNode)){
@@ -36,10 +35,8 @@ public class BFSAlgorithm implements SearchAlgorithm {
                     continue;
                 }
 
-                iterations++;
                 if(destinationNode.equals(adjacentNode)){
                     path.add(adjacentNode);
-                    System.out.println("Number iterations: " + iterations);
                     return path;
                 }
 
@@ -52,7 +49,6 @@ public class BFSAlgorithm implements SearchAlgorithm {
 
         }
 
-        System.out.println("Number iterations: " + iterations);
         return null;
     }
 }
