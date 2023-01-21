@@ -1,6 +1,12 @@
 ## Routing Service
 
-Service is responsible for backend part related to exchange rates.
+The service is responsible for finding the shortest path from one country to another.
+
+## Description of the path finding algorithm
+
+To store the graph itself, an adjacency list structure was chosen.
+The algorithm for finding the shortest path used in this project is based on the classic breadth-first search (BFS).
+
 
 ## Built With
 - [Java 11](https://docs.oracle.com/javase/11/)
