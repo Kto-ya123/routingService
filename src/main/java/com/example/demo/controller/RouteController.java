@@ -14,7 +14,7 @@ import java.util.Objects;
 
 @RestController
 @RequiredArgsConstructor
-public class Controller {
+public class RouteController {
     private final RouteService routeService;
 
     @GetMapping("/routing/{origin}/{destination}")
