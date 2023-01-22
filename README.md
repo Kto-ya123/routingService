@@ -30,5 +30,5 @@ mvn spring-boot:run -Dspring-boot.run.profiles=local
 ```
 3. Send test request:
 ```
-curl --location --request GET 'http://localhost:8080/routing/ESP/POL'
+curl --location --request GET 'http://localhost:8080/routing/ESP/IDN'
 ```
