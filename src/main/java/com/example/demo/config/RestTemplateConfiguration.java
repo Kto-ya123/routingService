@@ -13,6 +13,7 @@ import java.util.List;
 
 @Configuration
 public class RestTemplateConfiguration {
+    
     @Bean
     public RestTemplate restTemplate(){
         // This converter was created just because categories.json returns text/plain instead of application/json
