@@ -1,0 +1,7 @@
+countries-integration-service:
+  url: https://raw.githubusercontent.com/mledoze/countries/master/countries.json
+
+caching:
+  spring:
+    country-graph:
+      ttl: 600000 #in milliseconds
